@@ -1,18 +1,17 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
-    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
-    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
-    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <id>WebApiExceptionPipeline</id>
+    <version>1.0.0</version>
+    <title>WebApi Exception Pipeline</title>
+    <authors>Monzoom (Poul Foged)</authors>
+    <owners>Monzoom (Poul Foged)</owners>
+    <projectUrl>https://github.com/poulfoged/WebApiExceptionPipeline</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/poulfoged/WebApiExceptionPipeline/master/logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <description>Adds a pipeline of ExceptionFilters to the WebApi pipeline and a couple of useful filters</description>
+    <releaseNotes>Initial release.</releaseNotes>
     <copyright>Copyright 2015</copyright>
-    <tags>Tag1 Tag2</tags>
+    <tags>WebApi, Error, Exception, Pipeline, Filter, ASPNET, ExceptionFilter, ExecutionPipeline</tags>
   </metadata>
 </package>

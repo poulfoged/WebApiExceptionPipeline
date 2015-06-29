@@ -3,6 +3,8 @@ Adds a pipeline of `ExceptionFilterAttribute` so we can execute multiple actions
 
 Adds a custom ExceptionFilter that can translate exceptions thrown inside WebApi actions to the right http status code and reason phrase. This enables us to expose real types in the WebApi actions instead of `IHttpActionResult`.
 
+This eliminates the need for `HandleErrorAttribute`, which only understands Exceptions of type `HttpException`.
+
 Also adds a exception filter that contains basic plumbing for logging WebApi exceptions. 
 
 All in all three new filters: `PipelineExceptionFilterAttribute` `ExceptionTranslatorFilterAttribute`
