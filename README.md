@@ -1,3 +1,5 @@
+![](https://raw.githubusercontent.com/poulfoged/WebApiExceptionPipeline/master/logo-large.png)
+
 # WepApi Exception Pipeline
 Adds a pipeline of `ExceptionFilterAttribute` so we can execute multiple actions when an exception occurs. 
 
