@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>WebApiExceptionPipeline</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>WebApi Exception Pipeline</title>
     <authors>Monzoom (Poul Foged)</authors>
     <owners>Monzoom (Poul Foged)</owners>

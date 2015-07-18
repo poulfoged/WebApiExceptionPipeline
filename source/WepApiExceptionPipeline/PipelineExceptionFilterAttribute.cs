@@ -1,4 +1,6 @@
 ﻿using System.Collections.Concurrent;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Web.Http.Filters;
 
 namespace WepApiExceptionPipeline
@@ -7,10 +9,10 @@ namespace WepApiExceptionPipeline
     {
         private readonly ConcurrentBag<ExceptionFilterAttribute> filters = new ConcurrentBag<ExceptionFilterAttribute>();
 
-        public override void OnException(HttpActionExecutedContext actionExecutedContext)
+        public override async Task OnExceptionAsync(HttpActionExecutedContext actionExecutedContext, CancellationToken cancellationToken)
         {
             foreach (var exceptionFilter in filters)
-                exceptionFilter.OnException(actionExecutedContext);
+                await exceptionFilter.OnExceptionAsync(actionExecutedContext, cancellationToken);
         }
 
         public PipelineExceptionFilterAttribute Add(ExceptionFilterAttribute filter)
